@@ -1,0 +1,90 @@
+2023-05-06 20:27:18,730 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2023-05-06 20:27:18,771 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2023-05-06 20:27:18,772 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2023-05-06 20:27:18,786 INFO o.a.j.JMeter: Copyright (c) 1998-2022 The Apache Software Foundation
+2023-05-06 20:27:18,786 INFO o.a.j.JMeter: Version 5.5
+2023-05-06 20:27:18,786 INFO o.a.j.JMeter: java.version=19.0.2
+2023-05-06 20:27:18,786 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2023-05-06 20:27:18,787 INFO o.a.j.JMeter: os.name=Windows 10
+2023-05-06 20:27:18,787 INFO o.a.j.JMeter: os.arch=amd64
+2023-05-06 20:27:18,787 INFO o.a.j.JMeter: os.version=10.0
+2023-05-06 20:27:18,788 INFO o.a.j.JMeter: file.encoding=UTF-8
+2023-05-06 20:27:18,788 INFO o.a.j.JMeter: java.awt.headless=null
+2023-05-06 20:27:18,788 INFO o.a.j.JMeter: Max memory     =1073741824
+2023-05-06 20:27:18,788 INFO o.a.j.JMeter: Available Processors =8
+2023-05-06 20:27:18,812 INFO o.a.j.JMeter: Default Locale=English (EN)
+2023-05-06 20:27:18,813 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2023-05-06 20:27:18,813 INFO o.a.j.JMeter: JMeterHome=C:\Tools\apache-jmeter-5.5\apache-jmeter-5.5
+2023-05-06 20:27:18,813 INFO o.a.j.JMeter: user.dir  =C:\Tools\apache-jmeter-5.5\apache-jmeter-5.5\bin
+2023-05-06 20:27:18,814 INFO o.a.j.JMeter: PWD       =C:\Tools\apache-jmeter-5.5\apache-jmeter-5.5\bin
+2023-05-06 20:27:18,815 INFO o.a.j.JMeter: IP: 192.168.0.220 Name: EPPLKRAW0484 FullName: host.docker.internal
+2023-05-06 20:27:18,832 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2023-05-06 20:27:19,183 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2023-05-06 20:27:21,745 WARN o.j.r.PluginManagerMenuCreator: Was unable to install pmgr cmdline tool
+java.nio.file.NoSuchFileException: C:\Tools\apache-jmeter-5.5\bin\PluginsManagerCMD.bat
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:236) ~[?:?]
+	at java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:484) ~[?:?]
+	at java.nio.file.Files.newOutputStream(Files.java:228) ~[?:?]
+	at java.nio.file.Files.copy(Files.java:3159) ~[?:?]
+	at org.jmeterplugins.repository.PluginManagerCMDInstaller.writeOut(PluginManagerCMDInstaller.java:24) ~[jmeter-plugins-manager-1.8.jar:?]
+	at org.jmeterplugins.repository.PluginManagerCMDInstaller.main(PluginManagerCMDInstaller.java:12) ~[jmeter-plugins-manager-1.8.jar:?]
+	at org.jmeterplugins.repository.PluginManagerMenuCreator.getMenuItemsAtLocation(PluginManagerMenuCreator.java:16) ~[jmeter-plugins-manager-1.8.jar:?]
+	at org.apache.jmeter.gui.util.JMeterMenuBar.addPluginsMenuItems(JMeterMenuBar.java:595) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.gui.util.JMeterMenuBar.makeOptionsMenu(JMeterMenuBar.java:342) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.gui.util.JMeterMenuBar.createMenuBar(JMeterMenuBar.java:202) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.gui.util.JMeterMenuBar.<init>(JMeterMenuBar.java:117) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.gui.MainFrame.init(MainFrame.java:515) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.gui.MainFrame.<init>(MainFrame.java:232) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.JMeterGuiLauncher.startGuiInternal(JMeterGuiLauncher.kt:115) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.JMeterGuiLauncher.access$startGuiInternal(JMeterGuiLauncher.kt:47) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.JMeterGuiLauncher$startGuiInternal$1.invokeSuspend(JMeterGuiLauncher.kt) ~[ApacheJMeter_core.jar:5.5]
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33) ~[kotlin-stdlib-1.6.21.jar:1.6.21-release-334(1.6.21)]
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106) ~[kotlinx-coroutines-core-jvm-1.6.1.jar:?]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:117) ~[?:?]
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:191) ~[?:?]
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:236) ~[?:?]
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:234) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:318) ~[?:?]
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:234) ~[?:?]
+	at java.awt.Dialog.show(Dialog.java:1080) ~[?:?]
+	at java.awt.Component.show(Component.java:1728) ~[?:?]
+	at java.awt.Component.setVisible(Component.java:1675) ~[?:?]
+	at java.awt.Window.setVisible(Window.java:1036) ~[?:?]
+	at java.awt.Dialog.setVisible(Dialog.java:1016) ~[?:?]
+	at org.apache.jmeter.SplashScreen.lambda$showScreen$0(SplashScreen.java:95) ~[ApacheJMeter_core.jar:5.5]
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318) ~[?:?]
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:720) ~[?:?]
+	at java.awt.EventQueue$4.run(EventQueue.java:714) ~[?:?]
+	at java.security.AccessController.doPrivileged(AccessController.java:399) ~[?:?]
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86) ~[?:?]
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:742) ~[?:?]
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) ~[?:?]
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) ~[?:?]
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) ~[?:?]
+2023-05-06 20:27:21,797 WARN o.j.r.PluginManager: Found JAR conflict: C:\Tools\apache-jmeter-5.5\apache-jmeter-5.5\lib\ext\jmeter-plugins-manager-1.8.jar and C:\Tools\apache-jmeter-5.5\apache-jmeter-5.5\lib\jmeter-plugins-manager-1.8.jar
+2023-05-06 20:27:21,797 WARN o.j.r.PluginManager: Found JAR conflict: C:\Tools\apache-jmeter-5.5\apache-jmeter-5.5\lib\ext\jmeter-plugins-manager-1.9.jar and C:\Tools\apache-jmeter-5.5\apache-jmeter-5.5\lib\ext\jmeter-plugins-manager-1.8.jar
+2023-05-06 20:27:22,219 INFO o.j.r.JARSourceHTTP: Found cached repo
+2023-05-06 20:27:22,487 INFO o.j.r.PluginManager: Plugins Status: [bzm-parallel=0.11, jpgc-plugins-manager=1.8, jmeter-core=5.5, jmeter-ftp=5.5, jmeter-http=5.5, jmeter-jdbc=5.5, jmeter-jms=5.5, jmeter-junit=5.5, jmeter-java=5.5, jmeter-ldap=5.5, jmeter-mail=5.5, jmeter-mongodb=5.5, jmeter-native=5.5, jmeter-tcp=5.5, jmeter-components=5.5]
+2023-05-06 20:27:22,488 INFO o.j.r.PluginManagerMenuItem: Plugins Manager has upgrades: [jpgc-plugins-manager]
+2023-05-06 20:27:23,893 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-05-06 20:27:23,894 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-05-06 20:27:23,894 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-05-06 20:27:23,894 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2023-05-06 20:27:23,894 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2023-05-06 20:27:23,894 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
